@@ -1,4 +1,4 @@
-package ru.mike.tacocloud.controller;
+package ru.mike.tacocloud.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(HomeController.class)
+@WebMvcTest
 class HomeControllerTest {
     @Autowired
     private MockMvc mockMvc;
